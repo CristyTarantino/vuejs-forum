@@ -15,6 +15,9 @@ npm run build
 # build for production and view the bundle analyzer report
 npm run build --report
 
+# deploy to git pages (https://cristytarantino.github.io/Vue-Forum)
+npm run deploy
+
 # run unit tests
 npm run unit
 
