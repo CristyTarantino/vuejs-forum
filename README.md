@@ -1,6 +1,4 @@
-# vueschool-forum
-
-> Forum
+# [Vue-Forum](https://cristytarantino.github.io/Vue-Forum)
 
 ## Build Setup
 
