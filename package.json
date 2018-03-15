@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "vue": "^2.5.2",
+    "vue-gh-pages": "^1.10.2",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
