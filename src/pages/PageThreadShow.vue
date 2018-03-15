@@ -33,7 +33,7 @@
 </template>
 
 <script>
-  import sourceData from '@/data.json';
+  import sourceData from '@/data.json'
 
   export default {
     props: {
@@ -47,9 +47,9 @@
         thread: sourceData.threads[this.id],
         posts: sourceData.posts,
         users: sourceData.users
-      };
+      }
     }
-  };
+  }
 </script>
 
 <style scoped>

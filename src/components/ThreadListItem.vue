@@ -29,9 +29,9 @@
 </template>
 
 <script>
-  import sourceData from '@/data.json';
+  import sourceData from '@/data.json'
 
-  export default {
+export default {
     props: {
       thread: {
         required: true,
@@ -41,13 +41,13 @@
 
     computed: {
       repliesCount () {
-        return Object.keys(this.thread.posts).length - 1;
+        return Object.keys(this.thread.posts).length - 1
       },
       user () {
-        return sourceData.users[this.thread.userId];
+        return sourceData.users[this.thread.userId]
       }
     }
-  };
+  }
 </script>
 
 <style scoped>

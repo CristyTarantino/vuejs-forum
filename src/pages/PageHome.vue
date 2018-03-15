@@ -6,8 +6,8 @@
 </template>
 
 <script>
-  import sourceData from '@/data.json';
-  import ThreadList from '@/components/ThreadList';
+  import sourceData from '@/data.json'
+  import ThreadList from '@/components/ThreadList'
 
   export default {
     components: {
@@ -18,7 +18,8 @@
         threads: Object.values(sourceData.threads),
         posts: sourceData.posts,
         users: sourceData.users
-      };
+      }
     }
-  };
+  }
 </script>
+
