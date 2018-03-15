@@ -13,7 +13,7 @@
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs",
-    "deploy": "rm -rf dist && npm run build && cd dist && git init && git add . && git commit -m \"Initial commit\" && git remote add origin git@github.com:CristyTarantino/Vue-Forum.git && git push --force origin master:gh-pages"
+    "deploy": "rm -rf dist && npm run build && cd dist && git init && git add . && git commit -m \"Deployment commit\" && git remote add origin git@github.com:CristyTarantino/Vue-Forum.git && git push --force origin master:gh-pages"
   },
   "dependencies": {
     "vue": "^2.5.2",
