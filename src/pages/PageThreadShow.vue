@@ -20,8 +20,6 @@
   import PostList from '@/components/PostList'
   import PostEditor from '@/components/PostEditor'
 
-  console.log(sourceData)
-
   export default {
     components: {
       PostList,
