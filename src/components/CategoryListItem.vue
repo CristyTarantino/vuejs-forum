@@ -25,12 +25,8 @@
     },
     computed: {
       categoryForums () {
-        // get the Ids of the forums in this category
-        const forumsIds = Object.values(this.category.forums)
-
-        // search the forums in the sourceData that have .key equal to the ones in this category
         return Object.values(sourceData.forums)
-          .filter(forum => forumsIds.includes(forum['.key']))
+          .filter(forum => forum.categoryId === this.category['.key'])
       }
     }
   }

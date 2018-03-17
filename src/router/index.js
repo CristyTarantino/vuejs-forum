@@ -16,9 +16,9 @@ export default new Router({
       component: Home
     },
     {
-      path: '/thread/:id',
-      name: 'ThreadShow',
-      component: ThreadShow,
+      path: '/category/:id',
+      name: 'Category',
+      component: Category,
       props: true
     },
     {
@@ -28,9 +28,9 @@ export default new Router({
       props: true
     },
     {
-      path: '/category/:id',
-      name: 'Category',
-      component: Category,
+      path: '/thread/:id',
+      name: 'ThreadShow',
+      component: ThreadShow,
       props: true
     },
     {
