@@ -40,11 +40,11 @@
 
         <li class="navbar-user">
           <a href="#">
-            <img class="avatar-small" src="https://pbs.twimg.com/profile_images/881260299420041217/GMVGlDea_400x400.jpg" alt="">
+            <img class="avatar-small" :src="user.avatar" alt="">
             <span>
-                        Alex Kyriakidis
-                        <img class="icon-profile" src="../assets/img/svg/arrow-profile.svg" alt="">
-                    </span>
+                {{user.name}}
+                <img class="icon-profile" src="../assets/img/svg/arrow-profile.svg" alt="">
+            </span>
           </a>
 
           <!-- dropdown menu -->
@@ -63,7 +63,17 @@
 </template>
 
 <script>
+  import {mapGetters} from 'vuex'
+
   export default {
+    computed: {
+      ...mapGetters({
+        'user': 'authUser'
+      })
+    }
+    // user () {
+    //   return this.$store.state.user
+    // }
   }
 </script>
 
