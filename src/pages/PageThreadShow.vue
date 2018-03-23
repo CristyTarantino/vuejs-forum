@@ -16,7 +16,6 @@
 </template>
 
 <script>
-  import sourceData from '@/data.json'
   import PostList from '@/components/PostList'
   import PostEditor from '@/components/PostEditor'
 
@@ -33,7 +32,7 @@
     },
     data () {
       return {
-        thread: sourceData.threads[this.id],
+        thread: this.$store.state.threads[this.id],
         newPostText: ''
       }
     },
@@ -42,18 +41,14 @@
         // get the Ids of the posts in this thread
         const postIds = Object.values(this.thread.posts)
 
-        // search the posts in the sourceData that have .key equal to the ones in this thread
-        return Object.values(sourceData.posts)
+        // search the posts in the this.$store.state that have .key equal to the ones in this thread
+        return Object.values(this.$store.state.posts)
           .filter(post => postIds.includes(post['.key']))
       }
     },
     methods: {
       addPost ({post}) {
-        const postId = post['.key']
-
-        this.$set(sourceData.posts, postId, post)
-        this.$set(this.thread.posts, postId, postId)
-        this.$set(sourceData.users[post.userId].posts, postId, postId)
+        this.$store.dispatch('createPost', post)
       }
     }
   }
