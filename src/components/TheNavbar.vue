@@ -19,7 +19,9 @@
     <nav class="navbar">
       <ul>
         <li class="navbar-item">
-          <a href="index.html">Home</a>
+          <router-link :to="{name: 'Home'}">
+            Home
+          </router-link>
         </li>
         <li class="navbar-item">
           <a href="category.html">Category</a>
@@ -39,13 +41,13 @@
         </li>
 
         <li class="navbar-user">
-          <a href="#">
+          <router-link :to="{name: 'Profile'}">
             <img class="avatar-small" :src="user.avatar" alt="">
             <span>
                 {{user.name}}
                 <img class="icon-profile" src="../assets/img/svg/arrow-profile.svg" alt="">
             </span>
-          </a>
+          </router-link>
 
           <!-- dropdown menu -->
           <!-- add class "active-drop" to show the dropdown -->
