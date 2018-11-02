@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Forum",
   "homepage": "https://cristytarantino.github.io/vuejs-forum",
-  "author": "Cristina Tarantino <m.cristina.tarantino@gmail.com>",
+  "author": "Cristina Tarantino <cristina@tarantino.io>",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
