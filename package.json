@@ -2,7 +2,7 @@
   "name": "vueschool-forum",
   "version": "1.0.0",
   "description": "Forum",
-  "homepage": "https://cristytarantino.github.io/Vue-Forum",
+  "homepage": "https://cristytarantino.github.io/vuejs-forum",
   "author": "Cristina Tarantino <m.cristina.tarantino@gmail.com>",
   "private": true,
   "scripts": {
