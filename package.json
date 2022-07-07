@@ -16,7 +16,7 @@
     "deploy": "rm -rf dist && npm run build && cd dist && git init && git add . && git commit -m \"Deployment commit\" && git remote add origin git@github.com:CristyTarantino/Vue-Forum.git && git push --force origin master:gh-pages"
   },
   "dependencies": {
-    "moment": "^2.21.0",
+    "moment": "^2.29.4",
     "vue": "^2.5.2",
     "vue-gh-pages": "^1.10.2",
     "vue-router": "^3.0.1",
